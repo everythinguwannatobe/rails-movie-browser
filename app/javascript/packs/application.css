@@ -16,3 +16,7 @@ h3 {
   color: red;
 }
 
+#menu-toggle:checked + #menu {
+  display: block;
+}
+

@@ -1,0 +1,4 @@
+plugins:
+  post-css-smart-import: {}
+  postcss-cssnext: {}
+  tailwindcss: "./app/javascript/packs/application.js"

@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 
+//Custom styles
+
+#menu-toggle:checked + #menu {
+  @apply block;
+}
+
+//Components - custom styles
+
 .btn {
   @apply rounded-lg;
   @apply text-white font-bold;
@@ -16,12 +24,3 @@
 }
 
 @tailwind utilities;
-
-h3 {
-  color: red;
-}
-
-#menu-toggle:checked + #menu {
-  display: block;
-}
-

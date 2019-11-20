@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+
+.btn-group {
+  @apply bg-teal-500;
+  @apply text-white font-bold;
+  @apply py-3 px-8;
+}
+.btn-group:hover {
+  @apply bg-teal-700;
+}
+
+@tailwind utilities;
+
+h3 {
+  color: red;
+}
+

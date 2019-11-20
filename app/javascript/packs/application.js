@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import './stylesheets.css'
+import './application.css'
 
 
 

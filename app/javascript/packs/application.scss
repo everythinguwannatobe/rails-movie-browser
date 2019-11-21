@@ -17,10 +17,12 @@
 }
 
 .btn-teal {
-  @apply bg-teal-500;
+  //@apply bg-yellow-400;
+
+  background-color: #ffc107;
 
   &:hover {
-    @apply bg-teal-700;
+    @apply bg-yellow-700;
   }
 }
 
@@ -38,6 +40,20 @@
   }
 }
 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 
 @import "~tailwindcss/utilities";
 

@@ -19,7 +19,12 @@ group :development, :test do
 end
 
 group :development do
+<<<<<<< HEAD
   gem 'listen', '>= 3.0.5', '< 3.2'
+=======
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.3'
+>>>>>>> e3dd1793e3a9479462978ce0086ac3f1a5d43995
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'

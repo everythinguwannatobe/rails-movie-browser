@@ -17,6 +17,7 @@ Specs:
     - **Expand devise validations**
     - **Do we need validation on search field?**
 - [ ] Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
+    - **Scoped filtering with [has_scope](https://github.com/plataformatec/has_scope) or [Filterific](https://github.com/jhund/filterrific) gem**
 - [x] Include signup (how e.g. Devise)
 - [x] Include login (how e.g. Devise)
 - [x] Include logout (how e.g. Devise)

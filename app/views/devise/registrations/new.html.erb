@@ -25,8 +25,11 @@
   </div>
 
   <div>
-    <%= f.submit "Sign up", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+    <%= f.submit "Sign up", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 mb-4 rounded focus:outline-none focus:shadow-outline" %>
   </div>
+    <hr class="border-b-4 w-2/3 mb-2 border-teal-500" >
+<div>You can also create an account with one of these providers</div>
+    <%= link_to "Sign in with Github", user_github_omniauth_authorize_path %>
 <% end %>
   <p class="text-center text-gray-500 text-xs">
     &copy;2019 EclecticCoding. All rights reserved.

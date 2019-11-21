@@ -1,0 +1,37 @@
+<div class="w-full max-w-sm mx-auto mt-8">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name),
+               html: { class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" }) do |f| %>
+    <span class="text-2xl text-bold border-b-4 border-teal-500 mb-2">Log in</span>
+    <br>
+    <br>
+    <div>
+      <%= f.label :email, class: "user-form user-label mt-2 pt-2" %><br/>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",
+                        class: "user-form-field mb-2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+    </div>
+
+    <div>
+      <%= f.label :password, class: "user-form user-label pt-2" %><br/>
+      <%= f.password_field :password, autocomplete: "current-password", class: "user-form-field py-2 px-3 mb-3" %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+
+      <div>
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+
+    <div>
+      <%= f.submit "Log in", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+      <%= render "devise/shared/links", class: "inline ml-1"  %>
+    </div>
+    <div class="inline-block align-baseline font-bold text-sm text-teal-500 hover:text-teal-800">
+
+    </div>
+  <% end %>
+  <p class="text-center text-gray-500 text-xs">
+    &copy;2019 EclecticCoding. All rights reserved.
+  </p>
+</div>

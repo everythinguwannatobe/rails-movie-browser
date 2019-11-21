@@ -15,6 +15,7 @@
   @apply mx-2 py-3 px-8;
 
 }
+
 .btn-teal {
   @apply bg-teal-500;
 
@@ -22,6 +23,21 @@
     @apply bg-teal-700;
   }
 }
+
+// User forms
+.user-form .user-label {
+  @apply inline block text-gray-700 text-sm font-bold;
+}
+
+.user-form-field {
+  @apply shadow appearance-none border rounded w-full;
+  @apply text-gray-700 leading-tight;
+
+  &:focus {
+    @apply outline-none shadow-outline;
+  }
+}
+
 
 @import "~tailwindcss/utilities";
 

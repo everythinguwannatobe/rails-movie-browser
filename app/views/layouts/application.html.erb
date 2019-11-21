@@ -12,8 +12,12 @@
 
 <body class="min-h-screen bg-gray-400">
 <%= render 'layouts/nav' %>
+<% flash.keys.each do |type| %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+<% end %>
 
-  <%= yield %>
+<%= yield %>
 
 </body>
 

@@ -6,7 +6,12 @@ ruby '2.6.5'
 gem 'aws-sdk-s3', require: false
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
+gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.7'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-google'
+gem 'omniauth-twitter'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.1'
 gem 'sass-rails', '>= 6'
@@ -19,7 +24,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.3'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

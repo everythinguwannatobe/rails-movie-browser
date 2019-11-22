@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  has_many :watch_list
+  has_many :watch_lists
+  has_many :movies, through: :watch_lists
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -7,6 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :omniauthable
 
+  # Additional validations
   EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\z/i.freeze
 
   validates :email, presence: true, format: EMAIL_REGEX

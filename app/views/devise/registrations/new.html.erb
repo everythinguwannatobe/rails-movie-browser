@@ -14,7 +14,8 @@
 
   <div>
     <%= f.label :password, class: "user-form user-label pt-2" %>
-    <% if @minimum_password_length %><em class="text-gray-700 text-sm font-bold">(<%= @minimum_password_length %> characters min)</em>
+    <% if @minimum_password_length %>
+      <em class="text-gray-700 text-sm font-bold">(<%= @minimum_password_length %> characters min)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password", class: "user-form-field py-2 px-3 mb-3" %>
   </div>
@@ -25,7 +26,8 @@
   </div>
 
   <div>
-    <%= f.submit "Sign up", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 mb-4 rounded focus:outline-none focus:shadow-outline" %>
+    <%= f.submit "Sign up",
+                 class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 mb-4 rounded focus:outline-none focus:shadow-outline" %>
   </div>
     <hr class="border-b-4 w-2/3 mb-2 border-teal-500" >
 <div>You can also create an account with one of these providers</div>

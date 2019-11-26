@@ -15,9 +15,11 @@ ActiveRecord::Schema.define(version: 2019_11_21_161320) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "release_date"
-    t.string "duration"
-    t.integer "budget"
-    t.text "cast"
+    t.text "poster_path"
+    t.text "backdrop_path"
+    t.text "overview"
+    t.integer "movie_id"
+    t.integer "average_vote"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -37,8 +39,13 @@ ActiveRecord::Schema.define(version: 2019_11_21_161320) do
   end
 
   create_table "watch_lists", force: :cascade do |t|
+    t.integer "users_id"
+    t.integer "movies_id"
+    t.text "comments"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["movies_id"], name: "index_watch_lists_on_movies_id"
+    t.index ["users_id"], name: "index_watch_lists_on_users_id"
   end
 
 end

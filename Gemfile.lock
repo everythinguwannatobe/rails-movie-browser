@@ -270,7 +270,6 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   devise
-  dotenv
   dotenv-rails
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.3)

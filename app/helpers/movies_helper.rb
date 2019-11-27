@@ -7,7 +7,6 @@ module MoviesHelper
       next if existing_movies
 
       new_movie = Movie.new do |m|
-        puts movie['id']
         m.movie_id = movie['id']
         m.title = movie['title']
         m.release_date = movie['release_date']

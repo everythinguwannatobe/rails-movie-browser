@@ -4,39 +4,4 @@
     <h1 class="text-5xl mb-2">Movie Portal</h1>
     <p class="text-xl mb-8">❤️ Your entertainment planner ❤️</p>
   </section>
-
-<!--    <div class="inline-flex">-->
-<!--      <button class="btn btn-teal shadow-lg">Popular</button>-->
-<!--      <button class="btn btn-teal shadow-lg">Samsung</button>-->
-<!--      <button class="btn btn-teal shadow-lg">Latest</button>-->
-<!--    </div>-->
-
-  <%# if @movies %>
-  <!--      <ul>-->
-  <%# @movies["results"].each do |movie| %>
-  <!--          <li>-->
-  <!--            <%#= movie["title"] %><br>-->
-  <!--            <%#= image_tag 'https://image.tmdb.org/t/p/w300/' + movie["poster_path"] %><br>-->
-  <!--            <%#= movie["backdrop_path"] %><br>-->
-  <!--          </li>-->
-  <%# end %>
-  <!--      </ul>-->
-  <%# end %>
-  <% @movies["results"].each do |movie| %>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">Title</div>
-      <p class="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-      </p>
-    </div>
-    <div class="px-6 py-4">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
-    </div>
-  </div>
-    <% end %>
-
 </main>

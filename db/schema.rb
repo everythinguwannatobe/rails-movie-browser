@@ -13,12 +13,12 @@
 ActiveRecord::Schema.define(version: 2019_11_21_161320) do
 
   create_table "movies", force: :cascade do |t|
+    t.string "movie_id"
     t.string "title"
     t.string "release_date"
     t.text "poster_path"
     t.text "backdrop_path"
     t.text "overview"
-    t.integer "movie_id"
     t.integer "average_vote"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

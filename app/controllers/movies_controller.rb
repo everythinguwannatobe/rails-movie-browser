@@ -13,4 +13,12 @@ class MoviesController < ApplicationController
     render 'movies/index'
   end
 
+  def edit
+
+  end
+
+  def show
+
+  end
+
 end

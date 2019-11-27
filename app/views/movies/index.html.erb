@@ -19,11 +19,11 @@
 
 <% if @movies %>
   <ul>
-    <% @movies["results"].each do |movie| %>
+    <% @movies.each do |movie| %>
       <li>
         <%= movie["title"] %><br>
-        <%= image_tag 'https://image.tmdb.org/t/p/w300/' + movie["poster_path"] %><br>
-        <%= movie["backdrop_path"] %><br>
+<!--        <%#= image_tag 'https://image.tmdb.org/t/p/w300/' + movie["poster_path"].to_s %><br>-->
+<!--        <%#= movie["backdrop_path"] %><br>-->
       </li>
     <% end %>
   </ul>

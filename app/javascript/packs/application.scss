@@ -61,5 +61,10 @@
   width: 3rem;
 }
 
+.my-background-cover {
+  background: url("images/movie-theatre.png") no-repeat center fixed;
+  background-size: cover;
+}
+
 @import "~tailwindcss/utilities";
 

@@ -62,8 +62,8 @@
 }
 
 .my-background-cover {
-  background: url("images/movie-theatre.png") no-repeat center fixed;
-  background-size: cover;
+  background: url("images/movie-theatre.png");
+  @apply bg-no-repeat bg-center bg-fixed bg-cover;
 }
 
 @import "~tailwindcss/utilities";

@@ -11,6 +11,7 @@
 end
 
 # Create Watch List
+WatchList.new(movie_id: "10", user_id: "1" )
 
 # Seed 20 movies
 movie_seed = JSON.parse(RestClient.get("https://api.themoviedb.org/3/movie/popular?api_key=#{ENV['MOVIE_API']}&page=1"))

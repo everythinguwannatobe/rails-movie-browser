@@ -39,13 +39,15 @@ ActiveRecord::Schema.define(version: 2019_11_21_161320) do
   end
 
   create_table "watch_lists", force: :cascade do |t|
-    t.integer "users_id"
-    t.integer "movies_id"
+    t.integer "user_id", null: false
+    t.integer "movie_id", null: false
     t.text "comments"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["movies_id"], name: "index_watch_lists_on_movies_id"
-    t.index ["users_id"], name: "index_watch_lists_on_users_id"
+    t.index ["movie_id"], name: "index_watch_lists_on_movie_id"
+    t.index ["user_id"], name: "index_watch_lists_on_user_id"
   end
 
+  add_foreign_key "watch_lists", "movies"
+  add_foreign_key "watch_lists", "users"
 end

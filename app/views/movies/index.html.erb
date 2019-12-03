@@ -1,9 +1,9 @@
-<main class="my-background-cover" >
+<main class="my-background-cover">
   <div class="container mx-auto py-5">
 
     <div class="py-8 text-center">
-      <h1 class="text-5xl mb-2">Movie Portal</h1>
-      <p class="text-xl mb-8">❤️ Your entertainment planner ❤️</p>
+      <h1 class="text-5xl text-yellow-500 font-bold mb-2">Movie Portal</h1>
+      <p class="text-xl text-yellow-500 font-bold mb-8">❤️ Your entertainment planner ❤️</p>
     </div>
 
     <% if @movies %>
@@ -13,7 +13,10 @@
             <div class="bg-cover bg-center w-48 h-auto">
               <%= link_to (image_tag 'https://image.tmdb.org/t/p/w300/' + movie.poster_path), movie_path(movie.id) %>
             </div>
-            <h3 class="text-white p-2"><%= movie.title %></h3>
+            <div class="inline-flex justify-between space-between w-48 p-2">
+              <h3 class="text-white"><%= movie.title %></h3>
+              <div class="card-rating pr-4"><%= movie.average_vote %></div>
+            </div>
           </div>
         <% end %>
       </div>

@@ -7,7 +7,12 @@
       <div class="p-5">
         <h2 class="text-yellow-500 text-4xl font-medium mb-2"><%= @movie.title %></h2>
         <p class="text-xl mb-4"><%= @movie.tagline %></p>
-        <button class="btn btn-green-500">Add to Watchlist</button>
+        <% if user_signed_in? %>
+          <button class="bg-green-500 hover:bg-green-700 mb-5">
+            Add to Watchlist</button>
+          <% else %>
+          <button class="bg-green-500 hover:bg-green-700 mb-5">Log in to create a watchlist</button>
+          <% end %>
         <div class="movie__rating text-white"><%= @movie.average_vote %></div>
         <p class="text-xl font-light mb-5"><%= @movie.overview %></p>
       </div>

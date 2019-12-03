@@ -9,20 +9,17 @@
 
 //Components - custom styles
 
-.btn {
+button {
   @apply rounded-lg;
   @apply text-white font-bold;
   @apply mx-2 py-3 px-8;
-
 }
 
-.btn-teal {
-  //@apply bg-yellow-400;
-
-  background-color: #ffc107;
+.btn-primary {
+ @apply bg-green-500
 
   &:hover {
-    @apply bg-yellow-700;
+    @apply bg-green-700;
   }
 }
 
@@ -64,6 +61,17 @@
 .my-background-cover {
   background: url("images/movie-theatre.png");
   @apply bg-no-repeat bg-center bg-fixed bg-cover;
+}
+
+.card-rating {
+  background-color: #212529;
+  padding: 7px;
+  display: block;
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  @apply text-white text-sm text-center;
+  @apply border border-yellow-500 rounded-full;
 }
 
 .movie {

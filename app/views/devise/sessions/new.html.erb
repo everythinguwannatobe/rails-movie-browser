@@ -26,6 +26,9 @@
 
     <div>
       <%= f.submit "Log in", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+      <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold ml-6 my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        <%= link_to 'Sign up', new_user_registration_path %>
+      </button>
       <%#= render "devise/shared/links", class: "inline ml-1"  %>
     </div>
     <hr class="border-b-4 mb-2 border-teal-500" >

@@ -4,11 +4,12 @@ class MoviesController < ApplicationController
   include MoviesHelper
 
   def index
-    @movies = movie_popular(1)
-    render 'index'
+    movie_popular(1)
+    @movies = Movie.all
   end
 
   def show
+    @movie = Movie.find(params[:id])
   end
 
 end

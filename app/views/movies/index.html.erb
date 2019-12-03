@@ -7,14 +7,13 @@
     </div>
 
     <% if @movies %>
-
       <div class="flex flex-wrap overflow-hidden justify-center">
         <% @movies.each do |movie| %>
           <div class="overflow-hidden rounded shadow-lg w-48 bg-black m-5">
             <div class="bg-cover bg-center w-48 h-auto">
-              <%= image_tag 'https://image.tmdb.org/t/p/w300/' + movie["poster_path"] %>
+              <%= link_to (image_tag 'https://image.tmdb.org/t/p/w300/' + movie.poster_path), movie_path(movie.id) %>
             </div>
-            <h3 class="text-white p-2"><%= movie["title"] %></h3>
+            <h3 class="text-white p-2"><%= movie.title %></h3>
           </div>
         <% end %>
       </div>

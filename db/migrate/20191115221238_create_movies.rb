@@ -7,7 +7,7 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.text :poster_path
       t.text :backdrop_path
       t.text :overview
-      t.integer :average_vote
+      t.float :average_vote
 
       t.timestamps null: false
     end

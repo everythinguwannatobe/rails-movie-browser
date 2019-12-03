@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_11_21_161320) do
     t.text "poster_path"
     t.text "backdrop_path"
     t.text "overview"
-    t.integer "average_vote"
+    t.float "average_vote"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

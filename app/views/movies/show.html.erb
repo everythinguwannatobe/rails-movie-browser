@@ -1,0 +1,36 @@
+<main style="background-image: url(<%= 'https://image.tmdb.org/t/p/w1280/' + @movie.backdrop_path %>);"
+      class="min-h-screen min-w-screen bg-fixed bg-cover bg-no-repeat">
+
+  <div class="container mx-auto p-5">
+    <div class="movie h-auto">
+      <%= image_tag 'https://image.tmdb.org/t/p/w300/' + @movie.poster_path %>
+      <div class="p-5">
+        <h2 class="text-yellow-500 text-4xl font-medium mb-2"><%= @movie.title %></h2>
+        <p class="text-xl mb-4"><%= @movie.tagline %></p>
+        <button class="btn btn-green-500">Add to Watchlist</button>
+        <div class="movie__rating text-white"><%= @movie.average_vote %></div>
+        <p class="text-xl font-light mb-5"><%= @movie.overview %></p>
+      </div>
+      <div class="movie__stat inline-flex justify-between items-center">
+        <div>
+          <p>
+            <i class="fa fa-clock-o"></i>
+            Release Date: <%= (@movie.release_date).to_time.strftime(' %b %d %Y') %></p>
+        </div>
+        <div>
+          <p>Duration: <%= @movie.runtime %>m</p>
+        </div>
+        <div>
+
+          <p>Budget:
+            <% if @movie.budget != 0 %>
+              <%= number_to_currency(@movie.budget, unit: '$', precision: 0) %>
+            <% else %>
+              N/A
+            <% end %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -66,5 +66,47 @@
   @apply bg-no-repeat bg-center bg-fixed bg-cover;
 }
 
+.movie {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, .7);
+  color: #dee2e6;
+  position: relative;
+  display: grid;
+  grid-template: "image info" "image stat";
+  justify-content: start;
+  grid-template-columns: 300px 1fr;
+}
+
+.movie__info {
+  grid-area: info;
+}
+
+.movie__stat {
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  color: #adb5bd;
+  grid-area: stat;
+  align-self: end;
+}
+
+.movie__rating {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  margin: 4px;
+  background-color: transparent;
+  padding: 8px;
+  text-align: center;
+  display: inline-block;
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid #28a745;
+}
+
 @import "~tailwindcss/utilities";
 

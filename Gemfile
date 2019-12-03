@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
-gem 'aws-sdk-s3', require: false
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'faker'
@@ -34,6 +33,7 @@ end
 
 group :production do
   gem 'pg', '1.1.4'
+  gem 'aws-sdk-s3', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2019_11_21_161320) do
     t.text "backdrop_path"
     t.text "overview"
     t.float "average_vote"
+    t.integer "budget"
+    t.text "tagline"
+    t.integer "runtime"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

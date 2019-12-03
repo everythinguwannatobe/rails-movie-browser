@@ -18,4 +18,13 @@ module MoviesHelper
       new_movie.save
     end
   end
+
+  def movie_detail(loc_movie)
+    detail_data = JSON.parse(RestClient.get("https://api.themoviedb.org/3/movie/#{loc_movie}?api_key=#{ENV['MOVIE_API']}"))
+    edit_movie = Movie.find_by(movie_id: loc_movie)
+    edit_movie.budget = detail_data['budget']
+    edit_movie.tagline = detail_data['tagline']
+    edit_movie.runtime = detail_data['runtime']
+    edit_movie.save
+  end
 end

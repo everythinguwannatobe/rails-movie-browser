@@ -10,6 +10,8 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+    loc_movie = @movie.movie_id
+    movie_detail(loc_movie)
   end
 
 end

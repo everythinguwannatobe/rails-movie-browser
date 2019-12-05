@@ -19,15 +19,15 @@
       <div class="movie__stat inline-flex justify-between items-center">
         <div>
           <p>
-            <i class="fa fa-clock-o"></i>
+            <i class="far fa-clock text-2xl mr-3 pt-1"></i>
             Release Date: <%= (@movie.release_date).to_time.strftime(' %b %d %Y') %></p>
         </div>
         <div>
-          <p>Duration: <%= @movie.runtime %>m</p>
+          <p><i class="fas fa-history text-2xl mr-3 pt-1"></i>Duration: <%= @movie.runtime %>m</p>
         </div>
         <div>
 
-          <p>Budget:
+          <p><i class="far fa-money-bill-alt text-2xl mr-3 pt-1"></i>Budget:
             <% if @movie.budget != 0 %>
               <%= number_to_currency(@movie.budget, unit: '$', precision: 0) %>
             <% else %>

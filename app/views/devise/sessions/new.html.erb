@@ -1,41 +1,43 @@
-<div class="w-full max-w-sm mx-auto mt-8">
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name),
-               html: { class: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" }) do |f| %>
-    <span class="text-2xl text-bold mb-2">Log in</span>
-    <hr class="border-b-4 w-2/3 border-teal-500" >
-    <br>
-    <br>
-    <div>
-      <%= f.label :email, class: "user-form user-label mt-2 pt-2" %><br/>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email",
-                        class: "user-form-field mb-2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
-    </div>
-
-    <div>
-      <%= f.label :password, class: "user-form user-label pt-2" %><br/>
-      <%= f.password_field :password, autocomplete: "current-password", class: "user-form-field py-2 px-3 mb-3" %>
-    </div>
-
-    <% if devise_mapping.rememberable? %>
+<main class="my-background-cover min-h-screen">
+  <div class="w-full max-w-sm mx-auto pt-8">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name),
+                 html: { class: "bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4" }) do |f| %>
+      <span class="text-2xl text-bold mb-2">Log in</span>
+      <hr class="border-b-4 w-2/3 border-teal-500">
+      <br>
+      <br>
+      <div>
+        <%= f.label :email, class: "user-form user-label mt-2 pt-2" %><br/>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",
+                          class: "user-form-field mb-2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
 
       <div>
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
+        <%= f.label :password, class: "user-form user-label pt-2" %><br/>
+        <%= f.password_field :password, autocomplete: "current-password", class: "user-form-field py-2 px-3 mb-3" %>
       </div>
-    <% end %>
 
-    <div>
-      <%= f.submit "Log in", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
-      <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold ml-6 my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-        <%= link_to 'Sign up', new_user_registration_path %>
-      </button>
-      <%#= render "devise/shared/links", class: "inline ml-1"  %>
-    </div>
-    <hr class="border-b-4 mb-2 border-teal-500" >
-    <div class="text-center mb-2">You can also create an account <br>with Github Authorization</div>
-    <%= link_to(image_tag("github-logo.png"), user_github_omniauth_authorize_path, class: "icon-size")  %>
-  <% end %>
-  <p class="text-center text-gray-500 text-xs">
-    &copy;2019 EclecticCoding. All rights reserved.
-  </p>
-</div>
+      <% if devise_mapping.rememberable? %>
+
+        <div>
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+
+      <div>
+        <%= f.submit "Log in", class: "bg-teal-500 hover:bg-teal-700 text-white font-bold my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+        <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold ml-6 my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <%= link_to 'Sign up', new_user_registration_path %>
+        </button>
+        <%#= render "devise/shared/links", class: "inline ml-1"  %>
+      </div>
+      <hr class="border-b-4 mb-2 border-teal-500">
+      <div class="text-center mb-2">You can also create an account <br>with Github Authorization</div>
+      <%= link_to(image_tag("github-logo.png"), user_github_omniauth_authorize_path, class: "icon-size") %>
+    <% end %>
+    <p class="text-center text-gray-200 text-xs">
+      &copy;2019 EclecticCoding. All rights reserved.
+    </p>
+  </div>
+</main>

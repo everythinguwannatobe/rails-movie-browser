@@ -1,4 +1,4 @@
-# Project Title
+# Movie Browser
 
 One Paragraph of project description goes here
 
@@ -9,10 +9,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
@@ -32,29 +28,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -63,11 +37,31 @@ Add additional notes about how to deploy this on a live system
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Future Features
-- [ ] Add Cast Section to movie details
 - [x] Add tag line
 - [ ] Set up SVG Icon for nav bar
-- [ ] Add recommended section
-- [ ] Migrate to Postgres, then add genre array
+- [ ] Add Font-awesome icon for GitHub in login and create account forms
+- [ ] WatchList
+  - [ ] Add name to default WatchList(edit)
+  - [ ] Create new WatchList (name)
+- [ ] Build User Controller
+	- [ ] User index page (edit: email and password)
+	- [ ] 
+- [ ] Fix Heroku deploy
+  - [ ] Add Procfile
+- [ ] Devise expansion
+  - [ ] Add more 0Auth providers to login
+  - [ ] Create user profile page
+  - [ ] Nest watch list
+- [ ] Add pagination on index page
+- [ ] Add Search controller
+- [ ] Add recommended movie section
+- [ ] Add Cast Section to movie details
+- [ ] Migrate to Postgres
+  - [ ] then add Genre array
+  - [ ] Add Genre pill badges
+- [ ] Add Fandango API for local movie times
+- [ ] Dockerize App
+  - [ ] Deploy to Digital Ocean
 
 ## Contributing
 

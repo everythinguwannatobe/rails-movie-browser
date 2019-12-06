@@ -14,7 +14,7 @@
               <%= link_to (image_tag 'https://image.tmdb.org/t/p/w300/' + movie.poster_path), movie_path(movie.id) %>
             </div>
             <div class="inline-flex justify-between space-between w-48 p-2">
-              <h3 class="text-white"><%= movie.title %></h3>
+              <div class="text-white text-lg"><%= movie.title %></div>
               <div class="card-rating pr-4"><%= movie.average_vote %></div>
             </div>
           </div>

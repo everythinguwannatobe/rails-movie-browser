@@ -7,13 +7,24 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 
-
-
 #menu-toggle:checked + #menu {
   @apply block;
 }
 
 //Components - custom styles
+
+$headings : h1 h2 h3 h4 h5 h6;
+$font-size-base : 16px;
+
+$font-size-upper : 36px;
+$font-size-dec : 4px;
+@each $heading in $headings{
+  #{$heading} {
+    font-size : $font-size-upper;
+    font-size : ($font-size-upper / $font-size-base) + em;
+  }
+  $font-size-upper : $font-size-upper - $font-size-dec;
+}
 
 button {
   @apply rounded-lg;
@@ -36,7 +47,7 @@ button {
 
 .user-form-field {
   @apply shadow appearance-none border rounded w-full;
-  @apply text-gray-700 leading-tight;
+  @apply bg-gray-200 text-gray-700 leading-tight;
 
   &:focus {
     @apply outline-none shadow-outline;
@@ -67,6 +78,11 @@ button {
 .my-background-cover {
   background: url("images/movie-theatre.png");
   @apply bg-no-repeat bg-center bg-fixed bg-cover;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-lg;
+  @apply px-8 pt-6 pb-8 mb-4;
 }
 
 .card-rating {

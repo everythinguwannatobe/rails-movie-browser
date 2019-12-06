@@ -1,2 +1,30 @@
-<h1>WatchLists#index</h1>
-<p>Find me in app/views/watch_lists/index.html.erb</p>
+<main class="my-background-cover min-h-screen">
+  <div class="container w-1/2 card mx-auto py-15 pt-10">
+    <span class="text-2xl text-bold mb-2">Your WatchList</span>
+    <hr class="border-b-4 w-3/4 border-teal-500 mb-3">
+    <% if @user_list.nil? %>
+      <p>No WatchList found</p>
+      <p>After you add a movie to a watch list, you may view it here.</p>
+    <% else %>
+      <table class="table">
+        <thead>
+
+        <tr>
+          <th class="w-1/4 px-4 py-2">Image</th>
+          <th class="w-1/4 px-4 py-2">Movie Title</th>
+          <th class="w-1/4 px-4 py-2">My Comments</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @user_list.each do |list| %>
+          <tr>
+            <td class="border px-4 py-2"><%= image_tag 'https://image.tmdb.org/t/p/w92/' + list.poster_path %></td>
+            <td class="border px-4 py-2"><%= link_to list.movie_title, watch_list_url(list.movie_id) %></td>
+            <td class="border px-4 py-2"><%= list.comments %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</main>

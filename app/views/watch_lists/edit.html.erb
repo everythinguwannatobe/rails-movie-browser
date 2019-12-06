@@ -1,2 +1,20 @@
-<h1>WatchLists#edit</h1>
-<p>Find me in app/views/watch_lists/edit.html.erb</p>
+<main style="background-image: url(<%= 'https://image.tmdb.org/t/p/w1280/' + @movie.backdrop_path %>);" class="min-h-screen min-w-screen bg-fixed bg-cover bg-no-repeat">
+  <div class="w-full max-w-sm mx-auto pt-8">
+    <%= form_for(@watch_list, html: { class: "card opacity-75" }) do |f| %>
+      <span class="text-2xl text-bold mb-2">Save to WatchList</span>
+      <hr class="border-b-4 w-3/4 border-teal-500 mb-3">
+      <%= f.label :movie_id, 'Movie ID', class: "font-bold text-lg my-5 px-2 py-2" %>: <%= @movie.movie_id %><br/>
+      <%= f.label :title, 'Movie Title', class: "font-bold text-lg my-5 px-2 py-2" %>: <%= @movie.title %><br/>
+      <%= f.label :title, 'My Comments', class: "font-bold text-lg my-5 px-2 py-2" %>:<br/>
+      <%= f.text_area(:comments, size: '30x10', class: "user-form-field py-2 px-3 mb-3") %>
+      <%= f.submit 'Edit Watchlist', class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 mb-4 rounded focus:outline-none focus:shadow-outline" %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= button_to 'Delete', watch_list_path, method: :delete %>
+      <%#= f.submit 'Delete Movie', class: "bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 mb-4 rounded focus:outline-none focus:shadow-outline" %>
+
+    <% end %>
+    <p class="text-center text-gray-200 text-xs">
+      &copy;2019 EclecticCoding. All rights reserved.
+    </p>
+  </div>
+</main>

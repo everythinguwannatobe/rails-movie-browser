@@ -40,18 +40,17 @@ End with an example of getting some data out of the system or using it for a lit
 - [x] Add tag line
 - [ ] Set up SVG Icon for nav bar
 - [ ] Add Font-awesome icon for GitHub in login and create account forms
-- [ ] WatchList
-  - [ ] Add name to default WatchList(edit)
-  - [ ] Create new WatchList (name)
-- [ ] Build User Controller
-	- [ ] User index page (edit: email and password)
-	- [ ] 
+- [ ] Method to convert movie duration time
+- [ ] Add Search controller
+- [x] Build User Controller
+	- [x] User index page (edit: email and password)
+	- [x] nested with watch list
 - [ ] Fix Heroku deploy
   - [ ] Add Procfile
 - [ ] Devise expansion
   - [ ] Add more 0Auth providers to login
-  - [ ] Create user profile page
-  - [ ] Nest watch list
+  - [x] Create user profile page
+  - [x] Nest watch list
 - [ ] Add pagination on index page
 - [ ] Add Search controller
 - [ ] Add recommended movie section

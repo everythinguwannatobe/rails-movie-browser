@@ -9,7 +9,8 @@
         <p class="text-xl mb-4"><%= @movie.tagline %></p>
         <% if user_signed_in? %>
           <button class="bg-green-500 hover:bg-green-700 mb-5">
-            Add to Watchlist</button>
+            <%= link_to "Add to Watchlist", edit_user_watch_list_path(movie_id: @movie, user_id: current_user[:id]) %>
+          </button>
           <% else %>
           <button class="bg-green-500 hover:bg-green-700 mb-5">Log in to create a watchlist</button>
           <% end %>

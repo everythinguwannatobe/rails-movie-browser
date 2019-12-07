@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   # get 'users/show'
   # devise_for :users
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
@@ -8,6 +7,8 @@ Rails.application.routes.draw do
   namespace :users do
     redirect to: 'movie#index'
   end
+  get 'movies/voting', to: 'movies#votes'
+  get 'movies/title', to: 'movies#title'
 
   root 'movies#index'
 

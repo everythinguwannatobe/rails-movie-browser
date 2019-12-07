@@ -4,6 +4,7 @@ class Movie < ApplicationRecord
 
   accepts_nested_attributes_for :watch_lists
 
-  # default_scope { order(title: :asc) }
+  scope :voting, -> { order(average_vote: :desc) }
+  scope :title, -> { order(title: :asc) }
 
 end

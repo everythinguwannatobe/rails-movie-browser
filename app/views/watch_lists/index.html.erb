@@ -2,9 +2,12 @@
   <div class="container w-1/2 card mx-auto py-15 pt-10">
     <span class="text-2xl text-bold mb-2">Your WatchList</span>
     <hr class="border-b-4 w-3/4 border-teal-500 mb-3">
-    <% if @user_list.nil? %>
+    <% if @user_list.empty? %>
       <p>No WatchList found</p>
       <p>After you add a movie to a watch list, you may view it here.</p>
+      <p class="mt-5">
+        <button><%= link_to "Back to Movies List", root_path, class: "bg-green-500 hover:bg-green-700 mt-8 mb-5 py-3 px-4 rounded-lg font-bold cursor-pointer" %></button>
+      </p>
     <% else %>
       <table class="table">
         <thead>
@@ -19,12 +22,15 @@
         <% @user_list.each do |list| %>
           <tr>
             <td class="border px-4 py-2"><%= image_tag 'https://image.tmdb.org/t/p/w92/' + list.poster_path %></td>
-            <td class="border px-4 py-2"><%= link_to list.movie_title, watch_list_url(list.movie_id) %></td>
+            <td class="border px-4 py-2"><%= link_to list.movie_title, watch_list_url(list.movie_id), class: "text-red-600 hover:text-red-800 font-bold" %></td>
             <td class="border px-4 py-2"><%= list.comments %></td>
           </tr>
         <% end %>
         </tbody>
       </table>
+      <div class="mt-5">
+        <button><%= link_to "Back to Movies List", root_path, class: "bg-green-500 hover:bg-green-700mb-5 py-3 px-4 rounded-lg font-bold cursor-pointer" %></button>
+      </div>
     <% end %>
   </div>
 </main>

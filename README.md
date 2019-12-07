@@ -41,6 +41,7 @@ End with an example of getting some data out of the system or using it for a lit
 - [ ] Set up SVG Icon for nav bar
 - [ ] Add Font-awesome icon for GitHub in login and create account forms
 - [ ] Method to convert movie duration time
+- [ ] Research wait for movie_detail [EM-HTTP](https://github.com/igrigorik/em-http-request/tree/master)
 - [ ] Add Search controller
 - [x] Build User Controller
 	- [x] User index page (edit: email and password)

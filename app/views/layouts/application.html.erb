@@ -20,20 +20,21 @@
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
     <strong><%= notice %></strong>
   </div>
-
-<% end %>
-
-<%# else %>
-<!--  <p class="alert"><%#= alert %></p>-->
-<%# end %>
+  <% elsif !!flash[:alert]%>
+    <div class="p-4 bg-red-500 text-white text-center">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong><%= alert %></strong>
+    </div>
+  <% else %>
+    <div></div>
+  <% end %>
 
 <%# flash.keys.each do |type| %>
 
-<!--    <p class="alert"><%#= alert %></p>-->
-<%# end %>
+  <!--    <p class="alert"><%#= alert %></p>-->
 
-<%= yield %>
+  <%= yield %>
 
-</body>
+  </body>
 
-</html>
+  </html>

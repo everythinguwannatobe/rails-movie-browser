@@ -1,42 +1,41 @@
-# Movie Browser
+# Rails Movie Browser
+
+<img src="/home/webrev/development/flatiron-projects/rails-movie-browser/movie-browser.jpg" alt="Movie" style="zoom:67%;" />
 
 One Paragraph of project description goes here
+
+
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Clone this repository to your computer:
 
 ```
-Give the example
+git clone https://github.com/eclectic-coding/sinatra-todo-app
 ```
 
-And repeat
+Navigate to your newly created directory and run `bundle install`. Then set up the database: 
 
 ```
-until finished
+rails db:migrate && rails db:seed
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
 
 
-## Built With
+## Using Movie Browser
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/)<!-- @IGNORE PREVIOUS: link --> - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Video Walk Through on Vimeo
+
+
 
 ## Future Features
+
 - [ ] Set up SVG Icon for nav bar
 - [ ] Add Font-awesome icon for GitHub in login and create account forms
 - [ ] Method to convert movie duration time
@@ -70,17 +69,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Chuck Smith** - *Initial work* - [EclecticCoding](https://github.com/eclectic-coding)
 
-See also the list of [contributors](https://github.com/your/project/contributors)<!-- @IGNORE PREVIOUS: link --> who participated in this project.
+See also the list of [contributors](https://github.com/eclectic-coding/rails-movie-browser/graphs/contributors)<!-- @IGNORE PREVIOUS: link --> who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 

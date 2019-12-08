@@ -1,10 +1,10 @@
 # Rails Movie Browser
 
-<img src="/home/webrev/development/flatiron-projects/rails-movie-browser/movie-browser.jpg" alt="Movie" style="zoom:67%;" />
+
 
 One Paragraph of project description goes here
 
-
+![](/home/webrev/development/flatiron-projects/rails-movie-browser/movie-browser.jpg)
 
 ## Getting Started
 

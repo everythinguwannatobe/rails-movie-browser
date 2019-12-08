@@ -37,31 +37,28 @@ End with an example of getting some data out of the system or using it for a lit
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Future Features
-- [x] Add tag line
 - [ ] Set up SVG Icon for nav bar
 - [ ] Add Font-awesome icon for GitHub in login and create account forms
 - [ ] Method to convert movie duration time
 - [ ] Research wait for movie_detail [EM-HTTP](https://github.com/igrigorik/em-http-request/tree/master)
 - [ ] Add Search controller
-- [x] Build User Controller
-	- [x] User index page (edit: email and password)
-	- [x] nested with watch list
 - [ ] Fix Heroku deploy
   - [ ] Add Procfile
 - [ ] Devise expansion
   - [ ] Add more 0Auth providers to login
-  - [x] Create user profile page
-  - [x] Nest watch list
 - [ ] Add pagination on index page
 - [ ] Add Search controller
 - [ ] Add recommended movie section
 - [ ] Add Cast Section to movie details
 - [ ] Migrate to Postgres
-  - [ ] then add Genre array
+  - [ ] Add Genre array
   - [ ] Add Genre pill badges
+  - [ ] Add Cast Section to movie details
+  - [ ] Add Recommended Movies section
 - [ ] Add Fandango API for local movie times
 - [ ] Dockerize App
   - [ ] Deploy to Digital Ocean
+- [ ] Migrate to Vue.js with Rails API
 
 ## Contributing
 

@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-5.times do
-  User.create(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 8))
-end
+#5.times do
+#  User.create(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 8))
+#end
 
 # Create Watch List
-WatchList.new(movie_id: "10", user_id: "1" )
+# WatchList.new(movie_id: "10", user_id: "1" )
 
 # Seed 20 movies
 movie_seed = JSON.parse(RestClient.get("https://api.themoviedb.org/3/movie/popular?api_key=#{ENV['MOVIE_API']}&page=1"))

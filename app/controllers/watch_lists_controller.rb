@@ -25,13 +25,14 @@ class WatchListsController < ApplicationController
         m.poster_path = @movie['poster_path']
       end
       @watch_list.save!
+      flash[:notice] = 'Your selection has been added to your watchlist.'
     end
   end
 
   def update
     @watch_list = WatchList.find(params[:id])
     if @watch_list.update(watch_list_params)
-      redirect_to user_watch_lists_path(current_user), alert: 'You movie has been saved.'
+      redirect_to user_watch_lists_path(current_user), notice: 'Your comment has been saved to your watchlist.'
     end
   end
 

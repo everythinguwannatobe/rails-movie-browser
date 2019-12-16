@@ -13,17 +13,17 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 //Components - custom styles
 
-$headings : h1 h2 h3 h4 h5 h6;
-$font-size-base : 16px;
+$headings: h1 h2 h3 h4 h5 h6;
+$font-size-base: 16px;
 
-$font-size-upper : 36px;
-$font-size-dec : 4px;
-@each $heading in $headings{
+$font-size-upper: 36px;
+$font-size-dec: 4px;
+@each $heading in $headings {
   #{$heading} {
-    font-size : $font-size-upper;
-    font-size : ($font-size-upper / $font-size-base) + em;
+    font-size: $font-size-upper;
+    font-size: ($font-size-upper / $font-size-base) + em;
   }
-  $font-size-upper : $font-size-upper - $font-size-dec;
+  $font-size-upper: $font-size-upper - $font-size-dec;
 }
 
 button {
@@ -33,7 +33,7 @@ button {
 }
 
 .btn-primary {
- @apply bg-green-500
+  @apply bg-green-500
 
   &:hover {
     @apply bg-green-700;
@@ -52,6 +52,18 @@ button {
   &:focus {
     @apply outline-none shadow-outline;
   }
+}
+
+.signed_up, .notice {
+  @apply p-4;
+  @apply bg-green-500;
+  @apply text-center text-white;
+}
+
+.alert {
+  @apply p-4;
+  @apply bg-red-500;
+  @apply text-center text-white;
 }
 
 .closebtn {
@@ -112,7 +124,7 @@ button {
 }
 
 .movie__stat {
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
   width: 100%;
   padding: 15px;
   font-size: 1em;

@@ -15,26 +15,15 @@
 <body class="min-h-screen bg-gray-400">
 <%= render 'layouts/nav' %>
 
-<% if !!flash[:notice] %>
-  <div class="p-4 bg-green-500 text-white text-center">
+<% flash.keys.each do |type| %>
+  <div class="<%= type %>">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    <strong><%= notice %></strong>
+    <strong><%= flash[type] %></strong>
   </div>
-  <% elsif !!flash[:alert]%>
-    <div class="p-4 bg-red-500 text-white text-center">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      <strong><%= alert %></strong>
-    </div>
-  <% else %>
-    <div></div>
-  <% end %>
+<% end %>
 
-<%# flash.keys.each do |type| %>
+<%= yield %>
 
-  <!--    <p class="alert"><%#= alert %></p>-->
+</body>
 
-  <%= yield %>
-
-  </body>
-
-  </html>
+</html>

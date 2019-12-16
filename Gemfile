@@ -32,6 +32,7 @@ end
 
 group :production do
   gem 'aws-sdk-s3', require: false
+  gem 'thin'
   gem 'pg', '1.1.4'
 end
 

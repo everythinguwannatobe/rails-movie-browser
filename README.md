@@ -5,15 +5,21 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
-
-
 ### Installing
 
 Clone this repository to your computer:
-
 ```
 git clone https://github.com/eclectic-coding/sinatra-todo-app
+```
+**Prerequisites**
+This app uses two API's and uou will need to register for API keys from the following two services:
+- [GitHub](https://docs.cachethq.io/docs/github-oauth-token)
+- [MovieDB](https://developers.themoviedb.org/3/getting-started/introduction)
+After you have yopur keys, create a `.env` file in the root of the project and add your keys:
+```
+GITHUB_KEY=PUBLIC_KEY
+GITHUB_SECRET=YOUR_SECRET_KEY
+MOVIE_API=MOVIE_DB_API_KEY
 ```
 
 Navigate to your newly created directory and run `bundle install`. Then set up the database: 
@@ -21,12 +27,11 @@ Navigate to your newly created directory and run `bundle install`. Then set up t
 ```
 rails db:migrate && rails db:seed
 ```
-
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Using Movie Browser
 
-Video Walk Through on Vimeo
+Video Walk Through on [Vimeo](https://vimeo.com/378181978)
 
 ## Future Features
 

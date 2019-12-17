@@ -40,6 +40,7 @@ class WatchListsController < ApplicationController
     @watch_list = WatchList.find_by_movie_id(params[:id])
     @watch_list.destroy
     redirect_to watch_lists_path
+    flash[:notice] = 'Your movie has been deleted from your watchlist.'
   end
 
   private

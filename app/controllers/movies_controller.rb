@@ -6,6 +6,7 @@ class MoviesController < ApplicationController
   def index
     movie_popular(1)
     @movies = Movie.all
+    @featured_movie = @movies.sample
     @movies_vote = Movie.all.voting
   end
 

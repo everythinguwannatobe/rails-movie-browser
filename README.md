@@ -37,6 +37,7 @@ Video Walk Through on [Vimeo](https://vimeo.com/378181978)
 
 - [ ] Set up SVG Icon for nav bar
 - [ ] Add Font-awesome icon for GitHub in login and create account forms
+- [ ] Consolidate the images folders
 - [ ] Method to convert movie duration time
 - [ ] Research wait for movie_detail [EM-HTTP](https://github.com/igrigorik/em-http-request/tree/master)
 - [ ] Add Search controller

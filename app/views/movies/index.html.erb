@@ -6,6 +6,12 @@
       <p class="text-xl text-yellow-500 font-bold mb-8">❤️ Your entertainment planner ❤️</p>
     </div>
 
+    <h1>Movie of the Week</h1>
+    <div><% @featured_movie %></div>
+    <div>Title: <%= @featured_movie[:title] %></div>
+    <div>Release Date: <%= @featured_movie[:release_date] %></div>
+    <div>Overview: <%= @featured_movie[:overview] %></div>
+
     <div class="my-5 mx-auto text-center">
       <button class="btn bg-yellow-500 hover:bg-yellow-700">
           <%= link_to "Popular", root_path %>
@@ -17,7 +23,7 @@
         <%= link_to "Ascending", movies_title_path %>
       </button>
     </div>
-
+    
     <% if @movies %>
       <div class="flex flex-wrap overflow-hidden justify-center">
         <% @movies.each do |movie| %>

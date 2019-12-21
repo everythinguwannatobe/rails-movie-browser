@@ -35,38 +35,36 @@ Video Walk Through on [Vimeo](https://vimeo.com/378181978)
 
 ## Future Features
 
-- [ ] Set up SVG Icon for nav bar
-- [ ] Add Font-awesome icon for GitHub in login and create account forms
-- [ ] Consolidate the images folders
-- [ ] Method to convert movie duration time
-- [ ] Research wait for movie_detail [EM-HTTP](https://github.com/igrigorik/em-http-request/tree/master)
-- [ ] Add Search controller
-- [ ] Fix Heroku deploy
-  - [ ] Add Procfile
-- [ ] Devise expansion
-  - [ ] Add more 0Auth providers to login
-- [ ] Add pagination on index page
-- [ ] Add Search controller
-- [ ] Add recommended movie section
-- [ ] Add Cast Section to movie details
-- [ ] Migrate to Postgres
-  - [ ] Add Genre array
-  - [ ] Add Genre pill badges
-  - [ ] Add Cast Section to movie details
-  - [ ] Add Recommended Movies section
-- [ ] Add Fandango API for local movie times
-- [ ] Dockerize App
-  - [ ] Deploy to Digital Ocean
-- [ ] Migrate to Vue.js with Rails API
+
+&#9744; Set up SVG Icon for nav bar  
+&#9745; Add Font-awesome icon for GitHub in login and create account forms  
+&#9744; Consolidate the images folders ... bypass Assets pipeline  
+&#9744; Method to convert movie duration time  
+&#9744; test Filterific gem  
+&#9744; Research wait for movie_detail [EM-HTTP](https://github.com/igrigorik/em-http-request/tree/master)  
+&#9744; Add Search controller  
+&#9744; Fix Heroku deploy  
+\- &#9744; Add Procfile  
+&#9744; Devise expansion -- Add more 0Auth providers to login  
+&#9744; Add pagination on index page  
+&#9744; Add Search controller  
+&#9744; Add recommended movie section  
+&#9744; Add Cast Section to movie details  
+&#9744; Migrate to Postgres  
+    &#9744; Add Genre array  
+    &#9744; Add Genre pill badges  
+    &#9744; Add Cast Section to movie details  
+    &#9744; Add Recommended Movies section  
+&#9744; Add Fandango API for local movie times  
+&#9744; Dockerize App  
+    &#9744; Deploy to Digital Ocean  
+&#9744; Migrate to React using Redux with Rails API
 
 ## Contributing
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags)<!-- @IGNORE PREVIOUS: link -->.
+Please read [CONTRIBUTING](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
-* **Chuck Smith** - *Initial work* - [EclecticCoding](https://github.com/eclectic-coding)
+**Chuck Smith** - *Initial work* - [EclecticCoding](https://github.com/eclectic-coding)
 
 See also the list of [contributors](https://github.com/eclectic-coding/rails-movie-browser/graphs/contributors)<!-- @IGNORE PREVIOUS: link --> who participated in this project.
 

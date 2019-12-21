@@ -34,7 +34,8 @@
       </div>
       <hr class="border-b-4 mb-2 border-teal-500">
       <div class="text-center mb-2">You can also create an account <br>with Github Authorization</div>
-      <%= link_to(image_tag("github-logo.png"), user_github_omniauth_authorize_path, class: "icon-size") %>
+      <i class="fab fa-github"></i>
+      <%= link_to(image_tag("github.svg"), user_github_omniauth_authorize_path, class: "icon-size") %>
     <% end %>
     <p class="text-center text-gray-200 text-xs">
       &copy;2019 EclecticCoding. All rights reserved.

@@ -2,7 +2,7 @@
   "extends": ["config:base"],
   "automerge": true,
   "automergeType": "branch",
-  "automergeComment": "bors: r+"
+  "automergeComment": "bors: r+",
   "major": {
     "automerge": false
   },

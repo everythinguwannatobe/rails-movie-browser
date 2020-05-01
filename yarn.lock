@@ -7062,10 +7062,10 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-tailwindcss@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.4.2.tgz#bfd94a4a571c2393d94c3819a6f798c2f3a37073"
-  integrity sha512-km9uPNjThE+3Jv26E9zqYe4F4Xl0mnAnyQO9hYWVIGo3JZE1pi4hsfroj5Bfr8X/khN8gZjVTMMY5r4sMVvhlg==
+tailwindcss@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.4.3.tgz#3532ed44a6f28074721532dbdc16eb67ba120cc8"
+  integrity sha512-csb/iT5T811KWnm9OiVAA8DSnAHwzU5OTa31sbHQtXKbDhlJj/HRWWT+lkhezEJY9AlwvYVN0zi9imYoscfSAA==
   dependencies:
     "@fullhuman/postcss-purgecss" "^2.1.2"
     autoprefixer "^9.4.5"

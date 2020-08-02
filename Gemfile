@@ -9,7 +9,7 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'omniauth-google'
 gem 'omniauth-twitter'
-  gem 'pg', '1.2.2'
+gem 'pg', '1.2.2'
 gem 'puma', '~> 4.3.1'
 gem 'rails', '~> 6.0.3'
 gem 'rest-client'
@@ -20,14 +20,22 @@ gem 'webpacker', '~> 4.0'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.3'
   gem 'pry'
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'guard'
+  gem 'guard-rspec', require: false
 end
 
 group :production do

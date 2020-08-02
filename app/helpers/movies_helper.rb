@@ -1,5 +1,6 @@
 module MoviesHelper
 
+  # TODO: Migrate to rails credentials
   def movie_popular(page)
     data = JSON.parse(RestClient.get("https://api.themoviedb.org/3/movie/popular?api_key=#{ENV['MOVIE_API']}&page=#{page.to_s}"))
     data['results'].each do |movie|

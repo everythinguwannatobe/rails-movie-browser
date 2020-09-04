@@ -19,13 +19,21 @@ gem 'webpacker', '~> 4.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'database_cleaner'
   gem 'dotenv-rails'
+  gem "factory_bot_rails", git: "http://github.com/thoughtbot/factory_bot_rails"
   gem 'rspec-rails'
 end
 
 group :development do
+  gem "fuubar"
+  gem 'guard'
+  gem 'guard-rspec', require: false
   gem 'listen', '>= 3.0.5', '< 3.3'
   gem 'pry'
+  gem "rubocop"
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec"
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -34,8 +42,9 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'guard'
-  gem 'guard-rspec', require: false
+  gem 'selenium-webdriver'
+  gem 'simplecov', require: false
+  gem 'webdrivers'
 end
 
 group :production do

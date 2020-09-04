@@ -1,0 +1,62 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/schema.rb
+    - db/migrate/*.rb
+    - node_modules/**/*
+    - tmp/**/*
+    - vendor/**/*
+
+#################### Bundler ###########################
+
+Bundler/OrderedGems:
+  Description: >-
+    Gems within groups in the Gemfile should be alphabetically sorted.
+  Enabled: true
+  ConsiderPunctuation: true
+
+#################### Layout ###########################
+
+Layout/LineLength:
+  Description: 'Checks that line length does not exceed the configured limit.'
+  AutoCorrect: true # this is false by default
+  Exclude:
+    - Gemfile
+
+#################### Style ###############################
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  StyleGuide: '#consistent-string-literals'
+  Enabled: true
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+
+#################### RSpec cops from rubocop-rspec #######
+# https://github.com/rubocop-hq/rubocop-rspec/blob/master/config/default.yml
+
+RSpec/DescribeClass:
+  Description: Check that the first argument to the top level describe is a constant.
+  Enabled: true
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribeClass
+  Exclude:
+    - 'spec/requests/**/*'
+    - 'spec/system/**/*'
+    - 'spec/tasks/**/*'
+
+RSpec/ExampleLength:
+  Description: Checks for long examples.
+  Enabled: true
+  Max: 15
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExampleLength
+
+RSpec/MultipleExpectations:
+  Description: Checks if examples contain too many `expect` calls.
+  Enabled: true
+  Max: 8
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleExpectations

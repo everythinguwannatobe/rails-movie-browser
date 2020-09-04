@@ -36,12 +36,11 @@ module RailsMovieBrowser
     config.generators.system_tests = nil
 
     config.generators do |g|
-      g.test.framework :rspec,
-                       fixtures: false,
+      g.test_framework :rspec,
                        view_specs: false,
-                       help_specs: false,
-                       routing_specs: false
+                       helper_specs: false,
+                       routing_specs: false,
+                       request_specs: false
     end
   end
-end
 end

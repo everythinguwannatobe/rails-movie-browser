@@ -8,7 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@rails/actioncable": "6.1.7",
-    "@rails/activestorage": "6.1.6",
+    "@rails/activestorage": "6.1.7",
     "@rails/ujs": "6.1.6",
     "@rails/webpacker": "4.3.0",
     "tailwindcss": "1.9.6",
